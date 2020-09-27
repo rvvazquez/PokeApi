@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fetchFunction, obtainPokemons } from "./utilities/Api";
 import Card from "./Card";
+import Search from "./Search";
 import "./styles/List.css";
 
 export default function List() {
@@ -14,6 +15,7 @@ export default function List() {
       const allPokemons = await fetchFunction(
         localStorage.getItem("url") || initialUrl
       );
+      if (localStorage.getItem("url")) localStorage.removeItem("url");
       setNext(allPokemons.next);
       setPrevious(allPokemons.previous);
       setPokemons(await obtainPokemons(allPokemons.results));
@@ -41,6 +43,7 @@ export default function List() {
       <nav className="List_Nav">
         {previous ? <button onClick={prevPokemon}>Previous</button> : <div />}
         {next ? <button onClick={nextPokemon}>Next</button> : <div />}
+        <Search />
       </nav>
 
       <div className="grid">

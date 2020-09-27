@@ -22,6 +22,7 @@ export default function Card({ pokemon }) {
             return (
               <div
                 className="Card_Type"
+                key={type.type.name}
                 style={{ backgroundColor: typeColors[type.type.name] }}>
                 {upperFirstLetter(type.type.name)}
               </div>

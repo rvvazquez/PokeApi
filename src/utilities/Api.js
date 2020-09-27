@@ -3,7 +3,7 @@ export async function fetchFunction(url) {
     fetch(url)
       .then((res) => res.json())
       .then((response) => resolve(response))
-      .catch((error) => reject(error));
+      .catch(error => reject(null));
   });
 }
 
