@@ -13,7 +13,7 @@ export default function List(){
   
     useEffect(() => {
       async function init() {
-        const allPokemons = await fetchFunction(initialUrl)
+        const allPokemons = await fetchFunction(localStorage.getItem('url')||initialUrl)
         setNext(allPokemons.next)
         setPrevious(allPokemons.previous)
         setPokemons(await obtainPokemons(allPokemons.results))
@@ -22,6 +22,7 @@ export default function List(){
     }, [initialUrl])
   
     async function prevPokemon(){
+      localStorage.setItem('url',previous)
       const allPokemons = await fetchFunction(previous)
       setNext(allPokemons.next)
       setPrevious(allPokemons.previous)
@@ -29,6 +30,7 @@ export default function List(){
   
     }
     async function nextPokemon(){
+      localStorage.setItem('url',next)
       const allPokemons = await fetchFunction(next)
       setNext(allPokemons.next)
       setPrevious(allPokemons.previous)
