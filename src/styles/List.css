@@ -1,40 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
-.grid{
-    width: 100%;
-      display: grid;
-      margin: 0 auto;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fit, 250px);
-      grid-gap: 20px;
-  }
-  
-  .List_Nav{
-    margin-bottom: 20px;
-    justify-content: center;
-  
-  }
-  
-  .List_Nav button,a {
-    font-family: 'VT323', monospace ;
-    background: #304266;
-      border-bottom: 6px inset rgba(0,0,0,.5);
-      border-left: 6px inset rgba(0,0,0,.5);
-      border-right: 6px inset rgba(255,255,255,.5);
-      border-top: 6px inset rgba(255,255,255,.5);
-      box-sizing: border-box;
-      color: white;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 2.2rem;
-      margin: 1rem;
-      min-width: 200px;
-      padding: .5rem;
-      text-transform: uppercase;
-    width: auto;
-    outline:none;
-    
-    
-  }
-  
-  
-  
+.grid {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 20px;
+}
+
+.List_Nav {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.List_Nav button,a {
+  font-family: "VT323", monospace;
+  background: #304266;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: auto;
+  outline: none;
+}

@@ -1,76 +1,64 @@
-.Detail_Content{
-width: 100%;
+.Detail_Content {
+  width: 100%;
 
-background-color: #8693AD;
-border-radius: 8%;
-border: 1px solid white;
-padding: 20px;
-
-
+  background-color: #8693ad;
+  border-radius: 8%;
+  border: 1px solid white;
+  padding: 20px;
 }
 
-
-.Detail_Banner{
-    
-    justify-content: center;
-    width: 100%;
-
+.Detail_Banner {
+  justify-content: center;
+  width: 100%;
 }
 
+.Detail_img_container {
+  align-self: center;
+  padding: 10px;
+  justify-content: center;
 
-
-.Detail_img_container{
-    align-self: center;
-    padding: 10px;
-    justify-content: center;
-    
-    border-radius: 50%;
-
+  border-radius: 50%;
 }
 
-
-h1{
-    color: #282c34;
-
-
+h1 {
+  color: #282c34;
 }
 
-.Detail_Table{
-    justify-content: center;
-    margin-top: 20px;
+.Detail_Table {
+  justify-content: center;
+  margin-top: 20px;
 }
-.content-table{
-    border-collapse: collapse;
-    font-size: 0.9em;
-    margin-left:auto; 
-    margin-right:auto;
-    min-width: 200px;
-    background-color: #ADBEE0;
-    border-radius: 5px 5px 5px 5px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
-  }
-  
-  .content-table thead tr{
-    background-color: #009879;
-    color: white;
-    text-align: left;
-    font-weight: bold;
-  }
-  .content-table th{
-          text-align: center;
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  background-color: #adbee0;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
-  }
-  .content-table th, .content-table td{
-    padding: 12px 15px;
-    
-  }
-  .content-table tbody tr{
-    border-bottom: 1px solid #dddddd;
-  }
-  .content-table tbody tr:nth-of-type(even){
-    background-color: #f3f3f3;
-  }
-  .content-table tbody tr:last-of-type{
-    border-bottom: 2px solid #009879;
-  }
+.content-table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.content-table th {
+  text-align: center;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}

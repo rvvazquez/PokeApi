@@ -1,103 +1,94 @@
-.Card{
-    width: 100%;
-    background-color: white;
-    border-radius: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: hidden;
-    border: 1px solid #8997B3;
-
-    
+.Card {
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #8997b3;
 }
 
-.Card_Banner{
-    background-color: red;
-    color:white;
-    height: 50px;
-    position: relative; /* has to be position relative for left to work, or you could just do margin-left: -50px; too */
-    top: -20px;
-    padding-top: 30px;
-    padding-bottom: 0px;
-    font-size: 15px;
-    font-weight: bold;
-
-    
-
+.Card_Banner {
+  background-color: red;
+  color: white;
+  height: 50px;
+  position: relative; /* has to be position relative for left to work, or you could just do margin-left: -50px; too */
+  top: -20px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.Card_Black_Line{
-    background-color:black;
-    height: 20px;
-    position: relative; /* has to be position relative for left to work, or you could just do margin-left: -50px; too */
-    top: -20px;
-    
+.Card_Black_Line {
+  background-color: black;
+  height: 20px;
+  position: relative; /* has to be position relative for left to work, or you could just do margin-left: -50px; too */
+  top: -20px;
 }
 
-.Card_Types{
-    
-    display: flex;
-    justify-content: center;  
+.Card_Types {
+  display: flex;
+  justify-content: center;
 }
 
 .Card_Type {
-    padding: 5px 10px;
-    margin: 10px 10px 10px 0px;
-    border-radius: 5px;
-    background: cyan;
-    color: #fff;
+  padding: 5px 10px;
+  margin: 10px 10px 10px 0px;
+  border-radius: 5px;
+  background: cyan;
+  color: #fff;
 }
 
-
 .fade-in {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  
-  @keyframes fadeIn{
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
