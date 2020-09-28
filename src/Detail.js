@@ -1,24 +1,26 @@
-import React, { useState, useEffect } from "react";
-import "./styles/App.css";
-import "./styles/Detail.css";
-import Search from "./Search";
-import { typeColors, upperFirstLetter, fillNumber } from "./utilities/Format";
-import { fetchFunction } from "./utilities/Api";
-import { Link } from "wouter";
+import React, { useState, useEffect } from "react"
+import "./styles/App.css"
+import "./styles/Detail.css"
+import Search from "./Search"
+import { typeColors, upperFirstLetter, fillNumber } from "./utilities/Format"
+import { fetchFunction } from "./utilities/Api"
+import { Link } from "wouter"
 
 export default function Detail({ params }) {
-  const { pokemonName } = params;
-  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
-  const [pokemon, setPokemon] = useState();
+  const { pokemonName } = params
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+  const [pokemon, setPokemon] = useState()
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function init() {
-      const pokemonObject = await fetchFunction(url).catch((e) => e);
-      console.log(pokemonObject);
-      setPokemon(pokemonObject);
+      setLoading(true)
+      const pokemonObject = await fetchFunction(url).catch((e) => e)
+      setPokemon(pokemonObject)
+      setLoading(false)
     }
-    init();
-  }, [url]);
+    init()
+  }, [url])
 
   return (
     <div className="App">
@@ -28,7 +30,9 @@ export default function Detail({ params }) {
       </nav>
 
       <div className="Detail_Content">
-        {pokemon ? (
+        {loading ? (
+          <div>Loading...</div>
+        ) : pokemon ? (
           <div>
             <div className="Detail_Banner">
               <h1>
@@ -48,7 +52,7 @@ export default function Detail({ params }) {
                         style={{ backgroundColor: typeColors[type.type.name] }}>
                         {upperFirstLetter(type.type.name)}
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -78,5 +82,5 @@ export default function Detail({ params }) {
         )}
       </div>
     </div>
-  );
+  )
 }
