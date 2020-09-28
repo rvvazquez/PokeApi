@@ -1,10 +1,10 @@
-import React from "react";
-import "./styles/Card.css";
-import { typeColors, upperFirstLetter, fillNumber } from "./utilities/Format";
-import { Link } from "wouter";
+import React from "react"
+import "./styles/Card.css"
+import { typeColors, upperFirstLetter, fillNumber } from "./utilities/Format"
+import { Link } from "wouter"
 
 export default function Card({ pokemon }) {
-  const url = `/${pokemon.name}`;
+  const url = `/${pokemon.name}`
 
   return (
     <Link href={url}>
@@ -26,10 +26,10 @@ export default function Card({ pokemon }) {
                 style={{ backgroundColor: typeColors[type.type.name] }}>
                 {upperFirstLetter(type.type.name)}
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </Link>
-  );
+  )
 }

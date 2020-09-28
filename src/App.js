@@ -1,9 +1,9 @@
-import React from "react";
-import "./styles/App.css";
-import Detail from "./Detail";
-import List from "./List";
+import React from "react"
+import "./styles/App.css"
+import Detail from "./Detail"
+import List from "./List"
 
-import { Switch, Route } from "wouter";
+import { Switch, Route } from "wouter"
 
 export default function App() {
   return (
@@ -13,5 +13,5 @@ export default function App() {
         <Route component={List}></Route>
       </Switch>
     </div>
-  );
+  )
 }

@@ -3,15 +3,15 @@ export async function fetchFunction(url) {
     fetch(url)
       .then((res) => res.json())
       .then((response) => resolve(response))
-      .catch(error => reject(null));
-  });
+      .catch((error) => reject(null))
+  })
 }
 
 export async function obtainPokemons(pokemonsArray) {
   return await Promise.all(
     pokemonsArray.map(async (pokemon) => {
-      const result = await fetchFunction(pokemon.url);
-      return result;
+      const result = await fetchFunction(pokemon.url)
+      return result
     })
-  );
+  )
 }

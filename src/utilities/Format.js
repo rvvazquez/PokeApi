@@ -17,12 +17,12 @@ export const typeColors = {
   poison: "#b97fc9",
   rock: "#a38c21",
   water: "#4592c4",
-};
+}
 
 export function upperFirstLetter(name) {
-  return name.charAt(0).toUpperCase() + name.slice(1);
+  return name.charAt(0).toUpperCase() + name.slice(1)
 }
 
 export function fillNumber(number) {
-  return ("00" + number).slice(-3);
+  return ("00" + number).slice(-3)
 }
