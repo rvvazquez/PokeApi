@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react"
-import "./styles/App.css"
 import "./styles/Detail.css"
-import Search from "./Search"
 import { typeColors, upperFirstLetter, fillNumber } from "./utilities/Format"
 import { fetchFunction } from "./utilities/Api"
-import { Link } from "wouter"
+import Nav from "./Nav"
 
 export default function Detail({ params }) {
   const { pokemonName } = params
@@ -23,11 +21,8 @@ export default function Detail({ params }) {
   }, [url])
 
   return (
-    <div className="App">
-      <nav className="App_Nav">
-        <Link href="/">Go back</Link>
-        <Search />
-      </nav>
+    <div>
+      <Nav/>
 
       <div className="Detail_Content">
         {loading ? (

@@ -2,6 +2,7 @@ import React from "react"
 import "./styles/App.css"
 import Detail from "./Detail"
 import List from "./List"
+
 import LogingMenu from "./LoginMenu"
 
 import { Switch, Route } from "wouter"
